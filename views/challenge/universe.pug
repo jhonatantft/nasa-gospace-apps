@@ -17,42 +17,33 @@ block content
                     </a>
                     <div class="quize">
                         <div class="question-bar">
-                            //- <h2 class="qestion">= question.question</h2>
                             h2.qestion= question.question
                             <ul>
                                 <li>
                                     input(type='radio', name='option', id="a-" + index, class='ansList')
                                     label(for='a-' + index, class='ansa-' + index)= question.a
-                                    //- <input type="radio" name="option" id="a-0" class="ansList">
-                                    //- <label for="a-0" class="ansa-0">= question.a</label>
+
                                 </li>
                                 <li>
                                     input(type='radio', name='option', id="b-" + index, class='ansList')
                                     label(for='b-' + index, class='ansb-' + index)= question.b
-                                    //- <input type="radio" name="option" id="b-0" class="ansList">
-                                    //- <label for="b-0" class="ansb-0">= question.b</label>
+
                                 </li>
                                 <li>
                                     input(type='radio', name='option', id="c-" + index, class='ansList')
                                     label(for='c-' + index, class='ansc-' + index)= question.c
-                                    //- <input type="radio" name="option" id="c-0" class="ansList">
-                                    //- <label for="c-0" class="ansc-0">= question.c</label>
                                 </li>
                                 <li>
                                     input(type='radio', name='option', id="d-" + index, class='ansList')
                                     label(for='d-' + index, class='ansd-' + index)= question.d
-                                    //- <input type="radio" name="option" id="d-0" class="ansList">
-                                    //- <label for="d-0" class="ansd-0">= question.d</label>
                                 </li>
 
                             </ul>
                             <div class="footer-button">
                                 button(id='submit-' + index, class="submitBtn cta-upper") Submit
-                                //- <button id="submit-0" class="submitBtn cta-upper">Submit</button>
                             </div>
                         </div>
                         div(id='showscore-' + index, class='scoreArea')
-                        //- <div id="showscore-0" class="scoreArea"></div>
                     </div>
                 </div>
         </div>
@@ -62,56 +53,4 @@ block content
             input(type='hidden', name='_csrf', value=_csrf)
         </div>
         <button id="updateWallet">Get my Space Coins</button>
-        
-
-
-
-    //- <div>
-    //-     <ul class="universe-challenges">
-    //-         <li class="challenge-1">
-    //-             <a href="#">
-    //-                 <img src="images/meteor.png">
-    //-                 <div class="title">Astrophysics</div>
-    //-             </a>
-    //-         </li>
-    //-         <li class="challenge-2">
-    //-             <a href="#">
-    //-                 <img src="images/saturn.png">
-    //-                 <div class="title">Planets</div>
-    //-             </a>
-    //-         </li>
-    //-         <li class="challenge-3">
-    //-             <a href="#">
-    //-                 <img src="images/solar-system.png">
-    //-                 <div class="title">Constellations</div>
-    //-             </a>
-    //-         </li>
-    //-         <li class="challenge-4">
-    //-             <a href="#">
-    //-                 <img src="images/blackhole.png">
-    //-                 <div class="title">Heliophysics</div>
-    //-             </a>
-    //-         </li>
-    //-         <li class="challenge-5">
-    //-             <a href="#">
-    //-                 <img src="images/project.png">
-    //-                 <div class="title">Earth</div>
-    //-             </a>
-    //-         </li>
-    //-     </ul>
-    //- </div>
-    //- <div data-w-id="e641de60-c9e1-30bb-771c-9eb5b52d995b" class="hero-container work-pages">
-    //-   <div class="project-wrapper">
-    //-     <div class="project-image" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
-    //-         <img src="images/astronaut.png" alt="">
-    //-     </div>
-    //-     //- <div class="project-description" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
-    //-     //-   <div class="div-block-8">
-    //-     //-     <h5 class="heading-4 project-type">WEB DESIGN</h5>
-    //-     //-     <h5 class="heading-4 project-type">ILLUSTRATIONS</h5>
-    //-     //-   </div>
-    //-     //-   <h2 class="heading-2 project-title">We help Netwebo to achieve their goals with Perfect Web Design</h2>
-    //-     //- </div>
-    //-   </div>
-    //- </div>
     
