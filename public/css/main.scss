@@ -345,6 +345,132 @@ body {
   }
 }
 
+.card-slider {
+  .quize{
+    max-width: 700px;
+    width: 100%;
+    margin: 10px auto 0;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    
+    .qestion {
+      font-size: 1em;
+    }
+  }
+  ul{
+    margin: 0;
+    list-style: none;
+    color: #7c79c7;
+    border: 1px solid #efeeff;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fcfcff;
+  }
+  ul li+li{
+    // margin-top: 16px;
+    border-top: 1px solid #efeeff;
+    padding-top: 16px;
+  }
+  ul li input[type="radio"] {
+      display: none;
+  }
+  ul li input[type="radio"]+label{
+      position:relative;
+      padding-left: 25px;
+  }
+  ul li input[type="radio"]+label::before{
+      content:"";
+      position: absolute;
+      left: 0;
+      background: #ffffff;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      top: 1px;
+      border: 1px solid #7c79c7;
+  } 
+  ul li input[type="radio"]:checked+label::before {
+      content: "";
+      background: #0b03fc;
+      border-color: #0b03fc;
+  }
+  
+  ul li input[type="radio"]:checked+label::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 6px;
+      height: 7px;
+      width: 7px;
+      background: #fff;
+      border-radius: 50%;
+  }
+  
+  
+  label{
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .footer-button{
+    margin-top: 20px;
+  }
+  .btn,
+  .submitBtn{
+    padding: 14px 30px;
+    background-color: #b219c3;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+  }
+  .btn:hover,
+  .submitBtn:hover {
+      box-shadow: 0 14px 18px rgb(11, 3, 252);
+  }
+  .question-bar.hidden{
+    display: none;
+  }
+  .scoreCount {
+      color: #000;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      display: block;
+      vertical-align: middle;
+      line-height: 3.3;
+      font-size: 30px;
+      margin: 0 auto;
+      background: #ea38d7;
+      font-weight: bold;
+  }
+  div#showscore {
+      text-align: center;
+  }
+  .scoreBoard {
+      background: #fffbf1;
+      border-radius: 10px;
+      // padding: 50px 20px;
+      padding: 10px;
+      max-width: 300px;
+      // margin: 20px auto 50px;
+      margin: 10px;
+      border: 1px solid #ffe6a1;
+  }
+  .wrongAwnswer {
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 30px;
+  }
+}
+
+
 // .lottie-container {
 //   position: absolute;
 //   left: 0%;
@@ -730,6 +856,240 @@ body {
 
     img {
       height: 120px;
+    }
+  }
+}
+
+.slick-arrow {
+  background-color: transparent;
+  color: white;
+  font-size: 0px;
+  visibility: hidden;
+
+  &.slick-prev {
+    &::after {
+      content: "<";
+      color: white;
+      font-size: 50px;
+      top: 300px;
+      left: -50px;
+      visibility: visible;
+      position: absolute;
+    }
+  }
+
+  &.slick-next {
+    &::after {
+      content: ">";
+      color: white;
+      font-size: 50px;
+      top: 300px;
+      right: -50px;
+      visibility: visible;
+      position: absolute;
+    }
+  }
+  
+}
+.card-slider {
+  max-width: 960px;
+  margin: 0 auto;
+  
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  }
+  
+  .slick-prev-icon,
+  .slick-next-icon {
+    color: white;
+  }
+  
+  .slick-slide {
+    padding: 0 10px;
+  }
+  
+  .card {
+    position: relative;
+
+    display: flex !important;
+    flex-direction: column;
+    min-height: 600px;
+
+    border-radius: 3px;
+    border: 1px solid #b219c3;
+    padding: 10px;
+    background-color: white;
+
+    text-decoration: none;
+    color: rgba(0,0,0,.9);
+
+    transition: all .1s linear;
+
+    // background-color: #6e48d0;
+    background-color: transparent;
+    
+    @media screen and (max-width: 600px) {
+      height: auto;
+    }
+  }
+
+    /** Main link */
+    .card .main-link {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+      .card .main-link:focus {
+        outline: none;
+      }
+
+      .card .main-link:focus .title {
+        outline: 3px dashed orange;
+        outline-offset: -4px;
+        color: royalblue;
+        text-decoration: underline;
+      }
+
+    /** Product title */
+    .card .title {
+      color: #000;
+      margin: 0;
+      padding: 10px 10px 5px 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+      .card .title:hover {
+        text-decoration: underline;
+      }
+
+    /** Product image */
+    .card .image {
+      /** Visually place the image above all other content (like the heading) in the parent flex container (.card). */
+      order: -1;
+
+      position: relative;
+      height: auto;
+      padding: 2px;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+      .card .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(.5);
+        transition: all .3s ease-in-out;
+      }
+
+        .card .image:hover img {
+          width: 110%;
+          height: 110%;
+        }
+
+    /** Product description */
+    .card .description {
+      margin: 7px 10px 15px 10px;
+      font-size: 14px;
+      opacity: .8;
+    }
+
+    /** Floating "sale" badge */
+    .card .badge {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      z-index: 1;
+
+      padding: 5px 10px;
+
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      background-color: rgb(200,0,0);
+    }
+
+    /** Price */
+    .card .price {
+      padding-left: 10px;
+    }
+
+      .card .price .new-price {
+        font-weight: bold;
+      }
+
+      .card .price .original-price {
+        margin-left: 5px;
+        font-size: 14px;
+        font-style: italic;
+        opacity: .5;
+        text-decoration: line-through;
+      }
+
+    /** Rating */
+    .card .rating {
+      margin: 10px 0 15px 10px;
+      color: orange;
+      font-size: 12px;
+    }
+
+      /** "30 reviews" link next to stars */
+      .card .rating .reviews-link {
+        color: rgba(0,0,0,.6);
+        margin-left: 5px;
+      }
+
+        .card .rating .reviews-link:hover {
+          color: black;
+        }
+
+        .card .rating .reviews-link:focus {
+          color: royalblue;
+          outline: 3px dotted royalblue;
+          outline-offset: 2px;
+        }
+
+    /** Hover state = add box shadow, underline the title */
+    .card:hover {
+      border-color: rgb(220, 2, 108);
+      box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+    }
+
+      .card:hover .image img,
+      .card:focus .image img {
+        filter: grayscale(0);
+      }
+
+      .card a:focus {
+        outline: none;
+      }
+}
+
+
+/**
+  Demo only
+*/
+.note {
+  text-align: center;
+  font-size: 14px;
+  max-width: 960px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  opacity: .8;
+  
+  a {
+    color: black;
+    font-weight: bold;
+    
+    &:hover,
+    &:focus {
+      color: royalblue;
     }
   }
 }
