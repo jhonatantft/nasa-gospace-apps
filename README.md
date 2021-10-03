@@ -19,11 +19,6 @@ Through a platform of knowledge, we develop a designed project for the young gen
 
 ![](https://lh5.googleusercontent.com/-BJD2wK8CvC8/VLodBsyL-NI/AAAAAAAAEx0/SafE6o_qq_I/w1818-h1186-no/Screenshot%2B2015-01-17%2B00.25.49.png)
 
-Table of Contents
------------------
-
-- [Features](#features)
-
 
 Prerequisites
 -------------
