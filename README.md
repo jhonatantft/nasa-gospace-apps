@@ -11,6 +11,11 @@ Through a platform of knowledge, we develop and designed project for the young g
 
 The benefit of this project is that it brings knowledge to various communities and shares the content in a soft way around the world, powered by NASA social media and reaching the public by their age range.
 
+-------------
+## [Nasa Space App Challenge Details](https://2021.spaceappschallenge.org/challenges/statements/discovering-science-connections/details])
+-------------
+
+## Layout
 <h4 align="center">Home Page</h4>
 
 ![](https://raw.githubusercontent.com/jhonatantft/nasa-gospace-apps/main/layout/home.jpg)
