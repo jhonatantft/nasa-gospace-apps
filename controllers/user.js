@@ -192,12 +192,14 @@ exports.getAccount = (req, res) => {
  */
  exports.postUpdateUserChallengeScore = (req, res, next) => {
   const validationErrors = [];
-  if (req.body.score) validationErrors.push({ msg: 'No Score' });
+
+  if (!req.body.score) validationErrors.push({ msg: 'No Score' });
 
   if (validationErrors.length) {
     req.flash('errors', validationErrors);
     return res.redirect('/challenges');
   }
+  const score = req.body.score;
 
   // req.body.email = validator.normalizeEmail(req.body.email, { gmail_remove_dots: false });
   User.findById(req.user.id, (err, user) => {
@@ -209,7 +211,7 @@ exports.getAccount = (req, res) => {
     // user.profile.gender = req.body.gender || '';
     // user.profile.location = req.body.location || '';
     // user.profile.website = req.body.website || '';
-    user.score.value = req.body.score || 0;
+    user.score.value = score || 0;
 
     user.save((err) => {
       if (err) {
