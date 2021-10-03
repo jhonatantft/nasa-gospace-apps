@@ -7,17 +7,13 @@ Go Space Project - Nasa Space Apps Challenge
 
 Through a platform of knowledge, we develop a designed project for the young generation by data science provide by NASA and we provide the connection between science and the public. This platform has an interface that fits the target audience, is interactive, and is connected with the NASA directory database. The benefit of this project is that brings knowledge to various communities and shares the content in a soft way around the world, powered by NASA social media and reaching the public by their age range.
 
-<h4 align="center">Website</h4>
+<h4 align="center">Home Page</h4>
 
-![](https://lh6.googleusercontent.com/-KQTmCFNK6MM/U7OZpznjDuI/AAAAAAAAERc/h3jR27Uy1lE/w1366-h1006-no/Screenshot+2014-07-02+01.32.22.png)
+![](https://raw.githubusercontent.com/jhonatantft/nasa-gospace-apps/main/layout/home.jpg)
 
-<h4 align="center">Flatly Bootstrap Theme</h4>
+<h4 align="center">Challenge Page</h4>
 
-![](https://lh5.googleusercontent.com/-oJ-7bSYisRY/U1a-WhK_LoI/AAAAAAAAECM/a04fVYgefzw/w1474-h1098-no/Screen+Shot+2014-04-22+at+3.08.33+PM.png)
-
-<h4 align="center">API Examples</h4>
-
-![](https://lh5.googleusercontent.com/-BJD2wK8CvC8/VLodBsyL-NI/AAAAAAAAEx0/SafE6o_qq_I/w1818-h1186-no/Screenshot%2B2015-01-17%2B00.25.49.png)
+![](https://raw.githubusercontent.com/jhonatantft/nasa-gospace-apps/main/layout/challenge.jpg)
 
 Wireframes
 -------------
