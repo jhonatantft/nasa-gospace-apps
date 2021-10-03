@@ -7,7 +7,9 @@ Go Space Project - Nasa Space Apps Challenge
 
 Heroku link: https://mighty-woodland-52835.herokuapp.com/
 
-Through a platform of knowledge, we develop a designed project for the young generation by data science provide by NASA and we provide the connection between science and the public. This platform has an interface that fits the target audience, is interactive, and is connected with the NASA directory database. The benefit of this project is that brings knowledge to various communities and shares the content in a soft way around the world, powered by NASA social media and reaching the public by their age range.
+Through a platform of knowledge, we develop and designed project for the young generation using science data provide by NASA. We create the correlations between the different areas Nasa's science and the public. This platform has an interface that fits the target audience with interactivity, and it's connected with the NASA directory database.
+
+The benefit of this project is that it brings knowledge to various communities and shares the content in a soft way around the world, powered by NASA social media and reaching the public by their age range.
 
 <h4 align="center">Home Page</h4>
 
