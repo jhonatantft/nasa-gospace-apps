@@ -369,7 +369,7 @@ body {
     width: 200px;
     height: 200px;
     bottom: 100px;
-    right: 200px;
+    right: 69%;
     
     img {
       width: 100%;
@@ -464,7 +464,8 @@ body {
     padding: 10px;
     background: #ffffff;
     border-radius: 10px;
-    
+    min-height: 460px;
+
     .qestion {
       font-size: 15px;
     }
