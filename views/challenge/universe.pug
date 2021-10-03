@@ -4,6 +4,9 @@ block content
   .pb-2.mt-2.mb-4.border-bottom
     h3 Your achievements across the Universe
 
+        .total-wallet-coins Wallet total Space Coins: $ 
+            span.wallet= user.score.value
+
         <div class="card-slider">
             for question, index in questions
                 <div class="card">
@@ -54,14 +57,13 @@ block content
                 </div>
         </div>
         <div class="wallet-coins">
-            <span>Space Coins from challenge: </span>
+            <span>Space Coins from challenge: $</span>
             <span id="walletCoins"></span>
             input(type='hidden', name='_csrf', value=_csrf)
         </div>
         <button id="updateWallet">Get my Space Coins</button>
         
-        .total-wallet-coins Wallet total Space Coins: 
-            span.wallet= user.score.value
+
 
 
     //- <div>
