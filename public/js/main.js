@@ -154,15 +154,21 @@ $(document).ready(() => {
     const csrf = document.querySelector('.wallet-coins input');
     const token = csrf.value;
 
+    const totalCoins = document.querySelector('.total-wallet-coins span.wallet').innerHTML || 0;
+
+    const newTotalCoins = Number(totalCoins) + Number(score);
     fetch('/challenges/score', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'X-CSRF-TOKEN': token
       },
-      body: JSON.stringify({score})
+      body: JSON.stringify({
+        score: newTotalCoins
+      })
     }).then(res => {
       console.log('Request complete! response: ', res);
+      location.reload();
     });
   });
 });
