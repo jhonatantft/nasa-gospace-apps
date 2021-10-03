@@ -142,7 +142,27 @@ $(document).ready(() => {
         showscore.classList.remove('scoreArea');
         questionBar.classList.add('hidden');
         document.body.classList.add('score-color--white');
+
+        const coinsElement = document.querySelector('#walletCoins');
+        coinsElement.innerHTML = score;
       // }
+    });
+  });
+
+  const updateWalletButton = document.querySelector('#updateWallet');
+  updateWalletButton.addEventListener('click', function () {
+    const csrf = document.querySelector('.wallet-coins input');
+    const token = csrf.value;
+
+    fetch('/challenges/score', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-TOKEN': token
+      },
+      body: JSON.stringify({score})
+    }).then(res => {
+      console.log('Request complete! response: ', res);
     });
   });
 });

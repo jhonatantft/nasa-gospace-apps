@@ -51,13 +51,15 @@ block content
                         div(id='showscore-' + index, class='scoreArea')
                         //- <div id="showscore-0" class="scoreArea"></div>
                     </div>
-                    <div class="price">
-                        <span class="original-price">
-                            <span class="sr-only">Originally:</span>
-                        </span>
-                    </div>
                 </div>
         </div>
+        <div class="wallet-coins">
+            <span>Coins: </span>
+            <span id="walletCoins"></span>
+            input(type='hidden', name='_csrf', value=_csrf)
+        </div>
+
+        <button id="updateWallet">Get my Space Coins</button>
 
 
     //- <div>

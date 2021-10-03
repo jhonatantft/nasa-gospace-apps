@@ -324,6 +324,10 @@ body {
 
 #work {
   // position: fixed;
+  
+  .bg-wide  {
+    z-index: -99;
+  }
   .container {
     margin-top: 80px;
 
@@ -437,17 +441,18 @@ body {
     display: none;
   }
   .scoreCount {
-      color: #000;
-      border-radius: 50%;
-      height: 100px;
-      width: 100px;
-      display: block;
-      vertical-align: middle;
-      line-height: 3.3;
-      font-size: 30px;
-      margin: 0 auto;
-      background: #ea38d7;
-      font-weight: bold;
+    text-align: center;
+    color: #000;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: block;
+    vertical-align: middle;
+    line-height: 3.3;
+    font-size: 30px;
+    margin: 0 auto;
+    background: #ea38d7;
+    font-weight: bold;
   }
   div#showscore {
       text-align: center;

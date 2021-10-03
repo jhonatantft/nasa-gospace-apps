@@ -186,6 +186,45 @@ exports.getAccount = (req, res) => {
   });
 };
 
+/**
+ * POST /challenge/profile
+ * Update user score information.
+ */
+ exports.postUpdateUserChallengeScore = (req, res, next) => {
+  const validationErrors = [];
+  if (req.body.score) validationErrors.push({ msg: 'No Score' });
+
+  if (validationErrors.length) {
+    req.flash('errors', validationErrors);
+    return res.redirect('/challenges');
+  }
+
+  // req.body.email = validator.normalizeEmail(req.body.email, { gmail_remove_dots: false });
+  User.findById(req.user.id, (err, user) => {
+    if (err) { return next(err); }
+    // if (user.email !== req.body.email) user.emailVerified = false;
+
+    // user.email = req.body.email || '';
+    // user.profile.name = req.body.name || '';
+    // user.profile.gender = req.body.gender || '';
+    // user.profile.location = req.body.location || '';
+    // user.profile.website = req.body.website || '';
+    user.score.value = req.body.score || 0;
+
+    user.save((err) => {
+      if (err) {
+        if (err.code === 11000) {
+          req.flash('errors', { msg: 'The email address you have entered is already associated with an account.' });
+          return res.redirect('/challenges');
+        }
+        return next(err);
+      }
+      req.flash('success', { msg: 'Score updated.' });
+      res.redirect('/challenges');
+    });
+  });
+};
+
 
 /**
  * POST /account/profile

@@ -28,6 +28,10 @@ const userSchema = new mongoose.Schema({
     location: String,
     website: String,
     picture: String
+  },
+
+  score: {
+    value: Number
   }
 }, { timestamps: true });
 
