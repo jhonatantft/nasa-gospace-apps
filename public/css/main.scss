@@ -666,6 +666,13 @@ body {
   padding-top: 40px;
   padding-bottom: 0px;
 }
+.btn {
+  &.btn-link {
+    &.forgot-password {
+      color:#b219c3;
+    }
+  }
+}
 
 // .header-wrapper {
 //   width: 70%;
@@ -2231,40 +2238,40 @@ body {
 //   width: 100%;
 // }
 
-// .field-name {
-//   font-family: Poppins, sans-serif;
-//   color: #f6f3ff;
-//   font-weight: 400;
-//   letter-spacing: 0.5px;
-// }
+.field-name {
+  font-family: Poppins, sans-serif;
+  color: #f6f3ff;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
 
-// .field {
-//   height: 45px;
-//   margin-bottom: 40px;
-//   border-style: solid;
-//   border-width: 1px;
-//   border-color: #7f34db;
-//   border-radius: 10px;
-//   background-color: transparent;
-//   font-family: Poppins, sans-serif;
-//   color: #fff;
-// }
+.field {
+  height: 45px;
+  margin-bottom: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #7f34db;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+}
 
-// .field::-webkit-input-placeholder {
-//   color: #8b8b8b;
-// }
+.field::-webkit-input-placeholder {
+  color: #8b8b8b;
+}
 
-// .field:-ms-input-placeholder {
-//   color: #8b8b8b;
-// }
+.field:-ms-input-placeholder {
+  color: #8b8b8b;
+}
 
-// .field::-ms-input-placeholder {
-//   color: #8b8b8b;
-// }
+.field::-ms-input-placeholder {
+  color: #8b8b8b;
+}
 
-// .field::placeholder {
-//   color: #8b8b8b;
-// }
+.field::placeholder {
+  color: #8b8b8b;
+}
 
 // .select-field {
 //   height: 45px;
