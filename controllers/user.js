@@ -127,8 +127,18 @@ exports.getAccount = (req, res) => {
 };
 
 /**
- * GET /account
- * Profile page.
+ * GET /ranking
+ * Ranking page.
+ */
+exports.getRanking = (req, res) => {
+  res.render('ranking/all', {
+    title: 'Go Space Rank'
+  });
+};
+
+/**
+ * GET /challenge
+ * Challenges page.
  */
  exports.getChallenge = (req, res) => {
   res.render('challenge/universe', {

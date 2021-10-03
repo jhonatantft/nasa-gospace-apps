@@ -147,8 +147,10 @@ app.post('/account/delete', passportConfig.isAuthenticated, userController.postD
 app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userController.getOauthUnlink);
 
 app.get('/challenges', passportConfig.isAuthenticated, userController.getChallenge);
-
 app.post('/challenges/score', passportConfig.isAuthenticated, userController.postUpdateUserChallengeScore);
+
+app.get('/ranking', passportConfig.isAuthenticated, userController.getRanking);
+
 
 
 /**

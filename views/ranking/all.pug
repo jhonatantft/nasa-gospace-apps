@@ -1,0 +1,49 @@
+extends ../layout
+
+block content
+  .pb-2.mt-2.mb-4.border-bottom
+    h3 Go Space Rank
+
+    .container.rank
+        .leaderboard
+            .first-place
+                img(src='/images/gabi.jpeg')
+                .name Gabriela
+            .description
+                .title LEADERBOARD
+                .space-coins 345756 Space Coins
+                .rights 94834 Right answers
+        .ranking-list
+            ul
+                li
+                    if user.profile.name
+                        span 1.
+                        .name= user.profile.name
+                    else
+                        span 1.
+                        .name= user.email
+                    .space-coins Space Coins: 
+                        span= user.score.value
+                li
+                    span 2.
+                    .name Lord__riot
+                    .space-coins Space Coins: 
+                        span 1
+                li
+                    span 3.
+                    .name Maria
+                    .space-coins Space Coins: 
+                        span 1
+                li
+                    span 4.
+                    .name John
+                    .space-coins Space Coins: 
+                        span 0
+    .rewards
+        .helmet-left
+            img(src='/images/helmet.jpg')
+            .value 150 Space Coins
+        .helmet-right
+            img(src='/images/helmet.jpg')
+            .value 250 Space Coins
+                    
