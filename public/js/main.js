@@ -80,6 +80,35 @@ $(document).ready(() => {
     }
   ];
 
+  const imagesDb = [
+    {
+      image: `<img src="/images/rover.jpg" alt=".">`
+    },
+    {
+      image: `<iframe src='https://solarsystem.nasa.gov/gltf_embed/2372' width='100%' height='250px' frameborder='0' />`
+    },
+    {
+      image: `<img src="/images/lactea.jpg" alt=".">`
+    },
+    {
+      image: `<img src="/images/sunset.jpg" alt=".">`
+    },
+    {
+      image: `<iframe src='https://solarsystem.nasa.gov/gltf_embed/2393' width='100%' height='300px' frameborder='0' />`
+    },
+    {
+      image: `<img src="/images/nasa-mars.jpg" alt=".">`
+    },
+  ];
+
+  function createElementFromHTML(htmlString) {
+    var div = document.createElement('div');
+    div.innerHTML = htmlString.trim();
+  
+    return div.firstChild; 
+  }
+  
+
   // const cardSlider = document.querySelector('.card-slider');
 
   
@@ -98,16 +127,23 @@ $(document).ready(() => {
     const questionBar = card.querySelector('.question-bar');
     
     let countQuest = 0;
-    // loadQuestion();
+    loadQuestion();
 
-    // function loadQuestion(){
-    //   const Qdb = questionDB[index];
-    //   el.innerText = Qdb.question;
-    //   labelA.innerText = Qdb.a;
-    //   labelB.innerText = Qdb.b;
-    //   labelC.innerText = Qdb.c;
-    //   labelD.innerText = Qdb.d;
-    // }
+    function loadQuestion(){
+      const imageEl = imagesDb[index] && imagesDb[index].image;
+      const image = card.parentElement && card.parentElement.querySelector('.image');
+      if (imageEl) {
+        image.replaceWith(createElementFromHTML(imageEl));
+      } else {
+        image.replaceWith(createElementFromHTML('<img src="/images/rover.jpg" alt=".">'));
+      }
+      // const Qdb = questionDB[index];
+      // el.innerText = Qdb.question;
+      // labelA.innerText = Qdb.a;
+      // labelB.innerText = Qdb.b;
+      // labelC.innerText = Qdb.c;
+      // labelD.innerText = Qdb.d;
+    }
     const getCheckAnswer = () => {
       let answer;
       ansList.forEach((currentAns) =>{
