@@ -1,0 +1,28 @@
+{
+    "mars": {
+        "1": {
+            "question": "What is the main gas in Mars' atmosphere?",
+            "answer": "Carbon dioxide"
+        },
+        "2": {
+            "question": "How long is Mars in diameter?",
+            "answer": "6.779 km"
+        },
+        "3": {
+            "question": "The solar system is composed of eight planets, which move around a central star, the Sun. Mark the alternative that indicates the position of Mars in the solar system, taking the Sun as its starting point",
+            "answer": "Mars is the fourth planet from the Sun"
+        },
+        "4": {
+            "question": "Mars is located between the planets:",
+            "answer": "Earth and Jupiter"
+        },
+        "5": {
+            "question": "Using the diameter as a reference, we can say that Mars is:",
+            "answer": "The second smallest planet in the solar system"
+        },
+        "6": {
+            "question": "What is the main objective of Perseverance mission on Mars?",
+            "answer": "Mission focused on astrobiology , including the search for signs of ancestral microbial life"
+        }
+    }
+}
