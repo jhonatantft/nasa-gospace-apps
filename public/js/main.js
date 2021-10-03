@@ -85,7 +85,6 @@ $(document).ready(() => {
   
   let countQuest = 0;
   let score = 0;
-  // console.log(questionDB[countQuest]);
   loadQuestion();
   function loadQuestion(){
     const Qdb = questionDB[countQuest];
