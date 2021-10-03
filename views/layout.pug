@@ -14,7 +14,7 @@ html
   body
     include partials/header
 
-    <div id="work" class="section work" style="height: 100vh;">
+    <div id="work" class="section work" style="height: 100%;">
       <img src="images/dot-square.svg" alt="" class="dot-square _3">
       <img src="images/stars.svg" alt="" class="stars">
       <img src="images/stars.svg" alt="" class="stars _2">
@@ -24,11 +24,10 @@ html
       <img src="images/dot-square.svg" alt="" class="dot-square">
       <img src="images/dot-square.svg" alt="" class="dot-square _2">
       <img src="images/Oval2.svg" alt="" class="moon2">
+      .container
+        include partials/flash
+        block content
     </div>
-
-    .container
-      include partials/flash
-      block content
 
     include partials/footer
 

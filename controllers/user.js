@@ -127,6 +127,17 @@ exports.getAccount = (req, res) => {
 };
 
 /**
+ * GET /account
+ * Profile page.
+ */
+ exports.getChallenge = (req, res) => {
+  res.render('challenge/universe', {
+    title: 'Challenges'
+  });
+};
+
+
+/**
  * POST /account/profile
  * Update profile information.
  */

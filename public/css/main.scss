@@ -323,7 +323,14 @@ body {
 }
 
 #work {
-  position: fixed;
+  // position: fixed;
+  .container {
+    margin-top: 80px;
+
+    h3 {
+      color: #fff;
+    }
+  }
 }
 
 .image-6.astronaut {
@@ -490,6 +497,7 @@ body {
 
 .cta-upper:hover {
   box-shadow: 0 0 30px 8px rgba(248, 146, 220, 0.24);
+  color: #b219c3;
 }
 
 .cta-upper.contact {
@@ -666,10 +674,62 @@ body {
   padding-top: 40px;
   padding-bottom: 0px;
 }
+
 .btn {
   &.btn-link {
     &.forgot-password {
       color:#b219c3;
+    }
+  }
+}
+
+.universe-challenges {
+  position: absolute;
+  z-index: 99;
+
+  li {
+    position: absolute;
+
+    .title {
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.challenge-1 {
+      top: 10px;
+      left: 100px;
+    }
+
+    &.challenge-2 {
+      top: 250px;
+      left: 10px;
+    }
+
+    &.challenge-3 {
+      top: 50px;
+      left: 980px;
+      
+    }
+
+    &.challenge-4 {
+      top: 250px;
+      left: 1000px;
+      
+    }
+
+    &.challenge-5 {
+      top: 500px;
+      left: 900px;
+    }
+
+    img {
+      height: 120px;
     }
   }
 }
