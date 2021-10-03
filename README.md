@@ -7,7 +7,7 @@ Go Space Project - Nasa Space Apps Challenge
 
 Through a platform of knowledge, we develop a designed project for the young generation by data science provide by NASA and we provide the connection between science and the public. This platform has an interface that fits the target audience, is interactive, and is connected with the NASA directory database. The benefit of this project is that brings knowledge to various communities and shares the content in a soft way around the world, powered by NASA social media and reaching the public by their age range.
 
-<h4 align="center">Modern Theme</h4>
+<h4 align="center">Website</h4>
 
 ![](https://lh6.googleusercontent.com/-KQTmCFNK6MM/U7OZpznjDuI/AAAAAAAAERc/h3jR27Uy1lE/w1366-h1006-no/Screenshot+2014-07-02+01.32.22.png)
 
@@ -51,13 +51,6 @@ npm install
 node app.js
 ```
 
-**Note:** I highly recommend installing [Nodemon](https://github.com/remy/nodemon).
-It watches for any changes in your  node.js app and automatically restarts the
-server. Once installed, instead of `node app.js` use `nodemon app.js`. It will
-save you a lot of time in the long run, because you won't need to manually
-restart the server each time you make a small change in code. To install, run
-`sudo npm install -g nodemon`.
-
 
 Project Structure
 -----------------
@@ -98,59 +91,6 @@ You could place all your templates in a top-level `views` directory without
 having a nested folder structure, if that makes things easier for you.
 Just don't forget to update `extends ../layout`  and corresponding
 `res.render()` paths in controllers.
-
-List of Packages
-----------------
-
-| Package                         | Description                                                             |
-| ------------------------------- | ------------------------------------------------------------------------|
-| @octokit/rest                   | GitHub API library.                                                     |
-| bcrypt                          | Library for hashing and salting user passwords.                         |
-| body-parser                     | Node.js body parsing middleware.                                        |
-| chai                            | BDD/TDD assertion library.                                              |
-| chalk                           | Terminal string styling done right.                                     |
-| cheerio                         | Scrape web pages using jQuery-style syntax.                             |
-| clockwork                       | Clockwork SMS API library.                                              |
-| compression                     | Node.js compression middleware.                                         |
-| connect-mongo                   | MongoDB session store for Express.                                      |
-| dotenv                          | Loads environment variables from .env file.                             |
-| errorhandler                    | Development-only error handler middleware.                              |
-| eslint                          | Linter JavaScript.                                                      |
-| eslint-config-airbnb-base       | Configuration eslint by airbnb.                                         |
-| eslint-plugin-chai-friendly     | Makes eslint friendly towards Chai.js 'expect' and 'should' statements. |
-| eslint-plugin-import            | ESLint plugin with rules that help validate proper imports.             |
-| express                         | Node.js web framework.                                                  |
-| express-flash                   | Provides flash messages for Express.                                    |
-| express-session                 | Simple session middleware for Express.                                  |
-| express-status-monitor          | Reports real-time server metrics for Express.                           |
-| fbgraph                         | Facebook Graph API library.                                             |
-| instagram-node                  | Instagram API library.                                                  |
-| lastfm                          | Last.fm API library.                                                    |
-| lob                             | Lob API library.                                                        |
-| lodash                          | A utility library for working with arrays, numbers, objects, strings.   |
-| lusca                           | CSRF middleware.                                                        |
-| mailchecker                     | Verifies that an email address is valid and not a disposable address.   |
-| mocha                           | Test framework.                                                         |
-| moment                          | Parse, validate, compute dates and times.                               |
-| mongoose                        | MongoDB ODM.                                                            |
-| morgan                          | HTTP request logger middleware for node.js.                             |
-| multer                          | Node.js middleware for handling `multipart/form-data`.                  |
-| node-foursquare                 | Foursquare API library.                                                 |
-| node-sass                       | Node.js bindings to libsass.                                            |
-| node-sass-middleware            | Sass middleware compiler.                                               |
-| nyc                             | Coverage test.                                                          |
-| nodemailer                      | Node.js library for sending emails.                                     |
-| node-quickbooks                 | Quickbooks API library.                                                 |
-| passport                        | Simple and elegant authentication library for node.js.                  |
-| paypal-rest-sdk                 | PayPal APIs library.                                                    |
-| pug                             | Template engine for Express.                                            |
-| sinon                           | Test spies, stubs and mocks for JavaScript.                             |
-| stripe                          | Offical Stripe API library.                                             |
-| supertest                       | HTTP assertion library.                                                 |
-| tumblr.js                       | Tumblr API library.                                                     |
-| twilio                          | Twilio API library.                                                     |
-| twit                            | Twitter API library.                                                    |
-| validator                       | A library of string validators and sanitizers.                          |
 
 Docker
 ----------
