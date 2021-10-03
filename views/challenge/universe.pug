@@ -4,173 +4,61 @@ block content
   .pb-2.mt-2.mb-4.border-bottom
     h3 Your achievements across the Universe
 
-    <div class="card-slider">
-        <div class="card">
-            <a href="#"  class="main-link">
-            <div class="image">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOrgJXYzq76X2dQJUBBlQQ5w_0QdVAgG_ug&usqp=CAU" alt="Small succulent with long, spikey leaves in a mug-like planter.">
-            </div>
-            </a>
-            <div class="quize">
-                <div class="question-bar">
-                    <h2 class="qestion">1) Which type of JavaScript language is ___</h2>
-                    <ul>
-                    <li>
-                        <input type="radio" name="option" id="a" class="ansList">
-                        <label for="a" class="ansa">Object-Oriented</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="b" class="ansList">
-                        <label for="b" class="ansb">Object-Based</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="c" class="ansList">
-                        <label for="c" class="ansc">Assembly-language</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="d" class="ansList">
-                        <label for="d" class="ansd">High-level</label>
-                    </li>
+        <div class="card-slider">
+            for question, index in questions
+                <div class="card">
+                    <a href="#"  class="main-link">
+                        <div class="image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOrgJXYzq76X2dQJUBBlQQ5w_0QdVAgG_ug&usqp=CAU" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                        </div>
+                    </a>
+                    <div class="quize">
+                        <div class="question-bar">
+                            //- <h2 class="qestion">= question.question</h2>
+                            h2.qestion= question.question
+                            <ul>
+                                <li>
+                                    input(type='radio', name='option', id="a-" + index, class='ansList')
+                                    label(for='a-' + index, class='ansa-' + index)= question.a
+                                    //- <input type="radio" name="option" id="a-0" class="ansList">
+                                    //- <label for="a-0" class="ansa-0">= question.a</label>
+                                </li>
+                                <li>
+                                    input(type='radio', name='option', id="b-" + index, class='ansList')
+                                    label(for='b-' + index, class='ansb-' + index)= question.b
+                                    //- <input type="radio" name="option" id="b-0" class="ansList">
+                                    //- <label for="b-0" class="ansb-0">= question.b</label>
+                                </li>
+                                <li>
+                                    input(type='radio', name='option', id="c-" + index, class='ansList')
+                                    label(for='c-' + index, class='ansc-' + index)= question.c
+                                    //- <input type="radio" name="option" id="c-0" class="ansList">
+                                    //- <label for="c-0" class="ansc-0">= question.c</label>
+                                </li>
+                                <li>
+                                    input(type='radio', name='option', id="d-" + index, class='ansList')
+                                    label(for='d-' + index, class='ansd-' + index)= question.d
+                                    //- <input type="radio" name="option" id="d-0" class="ansList">
+                                    //- <label for="d-0" class="ansd-0">= question.d</label>
+                                </li>
 
-                    </ul>
-                    <div class="footer-button">
-                    <button id="submit" class="submitBtn cta-upper">Submit</button>
+                            </ul>
+                            <div class="footer-button">
+                                button(id='submit-' + index, class="submitBtn cta-upper") Submit
+                                //- <button id="submit-0" class="submitBtn cta-upper">Submit</button>
+                            </div>
+                        </div>
+                        div(id='showscore-' + index, class='scoreArea')
+                        //- <div id="showscore-0" class="scoreArea"></div>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">
+                            <span class="sr-only">Originally:</span>
+                        </span>
                     </div>
                 </div>
-                    <div id="showscore" class="scoreArea"></div>
-                </div>
-
-            <div class="price">
-            <span class="original-price">
-                <span class="sr-only">Originally:</span>
-            </span>
-            </div>
         </div>
-        <div class="card">
-            <a href="#"  class="main-link">
-            <div class="image">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOrgJXYzq76X2dQJUBBlQQ5w_0QdVAgG_ug&usqp=CAU" alt="Small succulent with long, spikey leaves in a mug-like planter.">
-            </div>
-            </a>
-            <div class="quize">
-                <div class="question-bar">
-                    <h2 class="qestion">1) Which type of JavaScript language is ___</h2>
-                    <ul>
-                    <li>
-                        <input type="radio" name="option" id="a" class="ansList">
-                        <label for="a" class="ansa">Object-Oriented</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="b" class="ansList">
-                        <label for="b" class="ansb">Object-Based</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="c" class="ansList">
-                        <label for="c" class="ansc">Assembly-language</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="d" class="ansList">
-                        <label for="d" class="ansd">High-level</label>
-                    </li>
 
-                    </ul>
-                    <div class="footer-button">
-                    <button id="submit" class="submitBtn cta-upper">Submit</button>
-                    </div>
-                </div>
-                    <div id="showscore" class="scoreArea"></div>
-                </div>
-
-            <div class="price">
-            <span class="original-price">
-                <span class="sr-only">Originally:</span>
-            </span>
-            </div>
-        </div>
-        <div class="card">
-            <a href="#"  class="main-link">
-            <div class="image">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOrgJXYzq76X2dQJUBBlQQ5w_0QdVAgG_ug&usqp=CAU" alt="Small succulent with long, spikey leaves in a mug-like planter.">
-            </div>
-            </a>
-            <div class="quize">
-                <div class="question-bar">
-                    <h2 class="qestion">1) Which type of JavaScript language is ___</h2>
-                    <ul>
-                    <li>
-                        <input type="radio" name="option" id="a" class="ansList">
-                        <label for="a" class="ansa">Object-Oriented</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="b" class="ansList">
-                        <label for="b" class="ansb">Object-Based</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="c" class="ansList">
-                        <label for="c" class="ansc">Assembly-language</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="d" class="ansList">
-                        <label for="d" class="ansd">High-level</label>
-                    </li>
-
-                    </ul>
-                    <div class="footer-button">
-                    <button id="submit" class="submitBtn cta-upper">Submit</button>
-                    </div>
-                </div>
-                    <div id="showscore" class="scoreArea"></div>
-                </div>
-
-            <div class="price">
-            <span class="original-price">
-                <span class="sr-only">Originally:</span>
-            </span>
-            </div>
-        </div>
-        <div class="card">
-            <a href="#"  class="main-link">
-            <div class="image">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOrgJXYzq76X2dQJUBBlQQ5w_0QdVAgG_ug&usqp=CAU" alt="Small succulent with long, spikey leaves in a mug-like planter.">
-            </div>
-            </a>
-            <div class="quize">
-                <div class="question-bar">
-                    <h2 class="qestion">1) Which type of JavaScript language is ___</h2>
-                    <ul>
-                    <li>
-                        <input type="radio" name="option" id="a" class="ansList">
-                        <label for="a" class="ansa">Object-Oriented</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="b" class="ansList">
-                        <label for="b" class="ansb">Object-Based</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="c" class="ansList">
-                        <label for="c" class="ansc">Assembly-language</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="option" id="d" class="ansList">
-                        <label for="d" class="ansd">High-level</label>
-                    </li>
-
-                    </ul>
-                    <div class="footer-button">
-                    <button id="submit" class="submitBtn cta-upper">Submit</button>
-                    </div>
-                </div>
-                    <div id="showscore" class="scoreArea"></div>
-                </div>
-
-            <div class="price">
-            <span class="original-price">
-                <span class="sr-only">Originally:</span>
-            </span>
-            </div>
-        </div>
-        
-    </div>
 
     //- <div>
     //-     <ul class="universe-challenges">

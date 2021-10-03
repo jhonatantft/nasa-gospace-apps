@@ -132,7 +132,57 @@ exports.getAccount = (req, res) => {
  */
  exports.getChallenge = (req, res) => {
   res.render('challenge/universe', {
-    title: 'Challenges'
+    title: 'Challenges',
+    questions: [
+        {
+          question : "1) What is the main gas in Mars' atmosphere?",
+          a: 'Oxygen',
+          b: 'Carbon  dioxide',
+          c: 'Carbon monoxide',
+          d: 'Helium',
+          ans: 'b'
+        },
+        {
+          question : '2) How long is Mars in diameter?' ,
+          a: '3.269 km',
+          b: '4.779 km',
+          c: '16.778 km',
+          d: '6.779 km',
+          ans: 'd'
+        },
+        {
+          question : '3) The solar system is composed of eight planets, which move around a central star, the Sun. Mark the alternative that indicates the position of Mars in the solar system, taking the Sun as its starting point' ,
+          a: 'Mars is the third planet from the Sun',
+          b: 'Mars is the fourth planet from the Sun',
+          c: 'Mars is the fifth planet from the Sun',
+          d: 'Mars is the second planet from the Sun',
+          ans: 'b'
+        },
+        {
+          question : '4) Mars is located between the planets:' ,
+          a: 'Saturn and Neptune',
+          b: 'Venus and Earth',
+          c: 'Earth and Jupiter',
+          d: 'Jupiter and Uranus',
+          ans: 'c'
+        },
+        {
+          question : '5) Using the diameter as a reference, we can say that Mars is:' ,
+          a: 'The smallest planet in the solar system',
+          b: 'The second smallest planet in the solar system',
+          c: 'The largest planet in the solar system',
+          d: 'The second largest planet in the solar system',
+          ans: 'b'
+        },
+        {
+          question : '6) What is the main objective of Perseverance mission on Mars?' ,
+          a: 'Mission focused on astrophysics, including the search for signs of ancestral microbial life',
+          b: 'Mission focused on astrobiology , including the search for signs of ancestral microbial life',
+          c: "Mission focused on astrochemistry, including the search for carbon",
+          d: "Mission focused on astromolecular, including the search for metal particles",
+          ans: 'b'
+        }
+    ]
   });
 };
 
